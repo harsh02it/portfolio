@@ -1,4 +1,3 @@
-/* Resetting default browser styles */
 *,
 *::before,
 *::after {
@@ -20,36 +19,26 @@ section {
   display: block;
 }
 
-/* Global Styles */
 body {
-  font-family: "Roboto", sans-serif; /* Use your chosen font family */
+  font-family: "Roboto", sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9; /* Adjust to your chosen color scheme */
+  background-color: #f9f9f9;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar {
-  background-color: transparent;
-}
-
-/* Header Styles */
 header {
-  background-color: #333;
   color: #333;
   padding: 20px 0;
 }
 
-header h1 {
-  font-size: 2rem;
-  margin-left: 20px;
+.navbar-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
 }
 
 nav ul {
@@ -62,44 +51,34 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
   text-decoration: none;
 }
 
-.header {
-  background-image: url(/portfolio/assets/img/header.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.header .overlay {
+.banner .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-linear-gradient(
-    bottom,
-    #fff 0%,
-    rgba(105, 90, 166, 0.35) 99%,
-    rgba(105, 90, 166, 0.5) 100%
-  );
-  background-image: linear-gradient(
-    to top,
-    #fff 0%,
-    rgba(105, 90, 166, 0.35) 99%,
-    rgba(105, 90, 166, 0.5) 100%
-  );
+  background-image: url(../portfolio/assets/img/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.header .header-content {
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .header-content {
   margin-top: 20px;
   flex-grow: 1;
   max-width: 550px;
 }
 
-.header .header-content .header-title .up {
+.banner .header-content .header-title .up {
   font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
   font-weight: 500;
   color: #444;
@@ -109,18 +88,17 @@ nav ul li a {
   display: block;
 }
 
-.header .header-content .header-title .down {
+.banner .header-content .header-title .down {
   font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
   margin-bottom: 0;
   position: relative;
   display: block;
 }
 
-.header .header-content .header-subtitle {
+.banner .header-content .header-subtitle {
   font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
   letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
   opacity: 0.8;
-  margin-top: -10px;
   margin-bottom: 20px;
 }
 
@@ -131,7 +109,7 @@ nav ul li a {
 
 .btn {
   display: inline-block;
-  background-color: #ffd700; /* Adjust to your chosen color scheme */
+  background-color: #ffd700;
   color: #333;
   padding: 10px 20px;
   text-decoration: none;
@@ -140,5 +118,5 @@ nav ul li a {
 }
 
 .btn:hover {
-  background-color: #ffdb58; /* Adjust to your chosen color scheme */
+  background-color: #ffdb58;
 }
