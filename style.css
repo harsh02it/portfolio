@@ -6,22 +6,8 @@
   padding: 0;
 }
 
-article,
-aside,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section {
-  display: block;
-}
-
 body {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.6;
+  font-family: "Signika", "Roboto", sans-serif;
   background-color: #f9f9f9;
 }
 
@@ -31,7 +17,6 @@ header {
 }
 
 .navbar-container {
-  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
@@ -70,16 +55,18 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 80vh;
 }
 
-.banner .header-content {
+.banner .banner-content {
   margin-top: 20px;
   flex-grow: 1;
-  max-width: 550px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.banner .header-content .header-title .up {
-  font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
+.banner .banner-content .banner-title .up {
+  font-size: calc(30px + 30 * ((100vw - 300px) / 1000));
   font-weight: 500;
   color: #444;
   margin-bottom: 5px;
@@ -88,23 +75,24 @@ nav ul li a {
   display: block;
 }
 
-.banner .header-content .header-title .down {
-  font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
-  margin-bottom: 0;
+.banner .banner-content .banner-title .down {
+  font-size: calc(30px + 45 * ((100vw - 300px) / 1000));
+  margin-bottom: 30px;
   position: relative;
   display: block;
 }
 
-.banner .header-content .header-subtitle {
-  font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
-  letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
+.banner .banner-content .banner-subtitle {
+  font-size: calc(10px + 12 * ((100vw - 300px) / 1000));
+  letter-spacing: calc(1px + 5 * ((100vw - 300px) / 1000));
   opacity: 0.8;
   margin-bottom: 20px;
 }
 
 .navbar-brand {
-  font-size: 2.5rem;
-  margin-left: 20px;
+  font-size: calc(20px + 10 * ((100vw - 300px) / 1000));
+  color: #fff;
+  margin-left: 10px;
 }
 
 .btn {
@@ -119,4 +107,40 @@ nav ul li a {
 
 .btn:hover {
   background-color: #ffdb58;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media Queries */
+@media (min-width: 576px) {
+  .navbar-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-container {
+    max-width: 1140px;
+  }
 }
