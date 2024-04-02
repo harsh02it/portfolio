@@ -66,8 +66,8 @@ nav ul li a {
 
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
-  left: 500px;
-  top: 20px;
+  right: 70px;
+  top: 15px;
 }
 
 .menu__btn {
@@ -110,7 +110,7 @@ nav ul li a {
   position: fixed;
   visibility: hidden;
   top: -50px;
-  left: 500px;
+  right: 70px;
   height: auto;
   margin: 0;
   list-style: none;
@@ -119,7 +119,7 @@ nav ul li a {
 
 .menu__item {
   display: block;
-  padding: 12px 24px;
+  padding: 6px 6px;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
