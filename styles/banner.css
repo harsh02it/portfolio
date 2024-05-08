@@ -1,0 +1,60 @@
+/* Banner Section */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 350px;
+  padding-bottom: 350px;
+  background-image: url(../assets/img/header.jpg);
+  background-color: #074f57;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 0;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+
+.banner .banner-content {
+  margin-top: 20px;
+  /* flex-grow: 1; */
+  /* flex: min-content; */
+  max-width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .banner-content .banner-title .up {
+  font-size: calc(30px + 30 * ((100vw - 300px) / 1000));
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 5px;
+  position: relative;
+  margin: 0;
+  display: block;
+}
+
+.banner .banner-content .banner-title .down {
+  font-size: 2em;
+  margin-bottom: 30px;
+  position: relative;
+  display: block;
+  color: #30343c;
+}
+
+.banner .banner-content .banner-subtitle {
+  font-size: calc(10px + 12 * ((100vw - 300px) / 1000));
+  letter-spacing: calc(1px + 5 * ((100vw - 300px) / 1000));
+  opacity: 0.8;
+  margin-bottom: 20px;
+}

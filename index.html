@@ -4,86 +4,180 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Harshit Savani - Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jersey+25&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/home.css" />
+    <!-- <link rel="stylesheet" href="styles/hamburger_menu.css" /> -->
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/banner-v2.css" />
+    <link rel="stylesheet" href="styles/skills.css" />
+    <!-- <link rel="stylesheet" href="styles/banner.css" /> -->
   </head>
   <body>
     <!-- Navbar and logo -->
-    <header>
-      <nav class="navbar">
-        <div class="navbar-container">
-          <a class="navbar-brand">Harshit.</a>
-          <!-- hamburger menu -->
-          <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-              <span></span>
-            </label>
+    <header class="header">
+      <div class="header__content">
+        <a class="header__title">Harshit.</a>
 
-            <ul class="menu__box">
-              <li><a class="menu__item" href="#">Home</a></li>
-              <li><a class="menu__item" href="#">Projects</a></li>
-              <li><a class="menu__item" href="#">Team</a></li>
-              <li><a class="menu__item" href="#">Blog</a></li>
-              <li><a class="menu__item" href="#">Contact</a></li>
-            </ul>
-          </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Projects</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#">Team</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
-      </nav>
+      </div>
     </header>
 
     <!-- Banner section -->
-    <div id="home" class="banner">
-      <div class="overlay"></div>
+    <div class="banner overlay">
+      <!-- <div class="overlay"></div> -->
       <div class="banner-content container">
         <h1 class="banner-title">
           <span class="up">HI!</span>
-          <span class="down">I am Harshit Savani</span>
+          <span class="down">I'm Harshit Savani</span>
         </h1>
-        <p class="banner-subtitle">FRONTEND WEB DESIGNER</p>
-
-        <!-- <button class="btn btn-primary">Visit My Works</button> -->
+        <p class="banner-subtitle"></p>
       </div>
     </div>
 
     <!-- Main Content -->
     <main class="main-content">
-      <section class="experience-section">
-        <div class="experience-section-header">
-          <p class="experience-title">Work Experience</p>
-          <h3 class="experience-subtitle">
-            Companies I have worked for in the past.
-          </h3>
+      <section class="profile__section">
+        <div class="profile">
+          <div class="profile__header">
+            <h4>ABOUT</h4>
+            <h3>Let me introduce myself.</h3>
+          </div>
+          <div class="profile__details">
+            <div class="profile__image">
+              <img src="assets/img/IMG_1684-v2.jpg" alt="Profile Image" />
+            </div>
+            <p class="profil__desc">
+              Fully committed to the philosophy of life-long learning, I’m a
+              front end developer with a deep passion for JavaScript, React and
+              all things web development. The unique combination of creativity,
+              logic, technology and never running out of new things to discover,
+              drives my excitement and passion for web development. When I’m not
+              doing programming I like to spend my time in photo editing, video
+              editing, playing table tennis.
+            </p>
+          </div>
         </div>
-        <article class="experience-details">
-          <h2 class="experience-number">01</h2>
-          <h4 class="experience-position">Accenture, Software Developer</h4>
-          <p class="experience-description">
-            I've worked on a wide variety of websites and improved user
-            experience.
-          </p>
-        </article>
-        <article class="experience-details">
-          <h2 class="experience-number">02</h2>
-          <h4 class="experience-position">
-            Crooked Computing, Technical Support Intern
-          </h4>
-          <p class="experience-description">
-            I've worked on a wide variety of websites and improved user
-            experience.
-          </p>
-        </article>
+      </section>
+
+      <section class="workex__section">
+        <div class="workex">
+          <div class="workex__intro">
+            <h5 class="workex__header">WORK EXPERIENCE</h5>
+            <p class="workex__header-desc">
+              Companies I have worked for in the past.
+            </p>
+          </div>
+          <div class="workex__container">
+            <div class="workex__section">
+              <h2 class="workex__number">01</h2>
+              <p>
+                <span class="workex__company">Accenture</span>
+                <span class="workex__title">, Software Developer</span>
+              </p>
+              <p class="workex__desc">
+                I've worked on variety of front-end projects implementing
+                various features for the clients.
+              </p>
+            </div>
+            <div class="workex__section">
+              <h2 class="workex__number">02</h2>
+              <p>
+                <span class="workex__company">Crooked Computing</span>
+                <span class="workex__title">, Technical Support Intern</span>
+              </p>
+              <p class="workex__desc">
+                I've solved multi-platform (Android, Windows, and iOS) issues
+                faced by the users.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills__section">
+        <div class="skills__header">
+          <h2>SKILLS</h2>
+        </div>
+        <div class="skills">
+          <div class="skills__row">
+            <div class="skills__item">
+              <img src="assets/img/html-logo.png" alt="html-logo" />
+              <div class="skills__item-name">HTML</div>
+            </div>
+            <div class="skills__item">
+              <img src="assets/img/css-logo.png" alt="css-logo" />
+              <div class="skills__item-name">CSS</div>
+            </div>
+            <div class="skills__item">
+              <img src="assets/img/javascript-logo.png" alt="javascript-logo" />
+              <div class="skills__item-name">JavaScript</div>
+            </div>
+          </div>
+          <div class="skills__row">
+            <div class="skills__item">
+              <img src="assets/img/react-logo.png" alt="react-logo" />
+              <div class="skills__item-name">React</div>
+            </div>
+            <div class="skills__item">
+              <img src="assets/img/git-logo.png" alt="git-logo" />
+              <div class="skills__item-name">Git</div>
+            </div>
+            <div class="skills__item">
+              <img src="assets/img/mongodb-logo.png" alt="mongodb-logo" />
+              <div class="skills__item-name">MongoDB</div>
+            </div>
+            <div class="skills__item">
+              <img src="assets/img/nodejs-logo.png" alt="nodejs-logo" />
+              <div class="skills__item-name">Node.js</div>
+            </div>
+          </div>
+          <div class="skills__row">
+            <div class="skills__item">
+              <img src="assets/img/express-logo.png" alt="expressjs-logo" />
+              <div class="skills__item-name">Express.js</div>
+            </div>
+            <div class="skills__item">
+              <img src="assets/img/python-logo.png" alt="python-logo" />
+              <div class="skills__item-name">Python</div>
+            </div>
+            <div class="skills__item">
+              <img src="assets/img/java-logo.png" alt="java-logo" />
+              <div class="skills__item-name">Java</div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
     <!-- Footer Content -->
     <footer>
-      <p>&copy; 2024 Harshit Savani. All rights reserved.</p>
+      <p class="copyright">Harshit Savani &copy;2024</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,206 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "poppins", "Lora", "Exo 2", "Signika", "Roboto", sans-serif;
+  background-color: #f9f9f9;
+  font-size: 16px;
+}
+
+/* Profile Section */
+
+.profile__section {
+  background-color: #fff3e4;
+}
+
+.profile {
+  padding: 100px 0;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.profile__header {
+  text-align: center;
+}
+
+.profile__header h4 {
+  color: #609bff;
+  font-size: 1.6rem;
+  line-height: 1.875;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.4rem;
+}
+
+.profile__header h3 {
+  font-size: 3rem;
+  color: #313131;
+  line-height: 1.25;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.profile__details {
+  display: flex;
+  align-items: center;
+  row-gap: 2rem;
+  margin-top: 4rem;
+}
+
+.profile__details p {
+  text-align: left;
+  padding-left: 5rem;
+  max-width: 60%;
+  letter-spacing: 0.1rem;
+  line-height: 1.75;
+}
+
+.profile__image {
+  width: 300px;
+}
+
+.profile__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Profile Section */
+
+/* Work experience */
+
+.workex__section {
+  background-color: #000;
+  color: #f9f9f9;
+}
+
+.workex {
+  padding-top: 15vw;
+  padding-bottom: 15vw;
+  min-width: 50%;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.workex__header {
+  font-size: calc(1.5vw + 0.5rem);
+  color: #8491a0;
+}
+
+.workex__header-desc {
+  font-size: calc(1.2vw + 1.5rem);
+  font-weight: 700;
+}
+
+.workex__section,
+.workex__intro {
+  padding: 0 2vw;
+}
+
+.workex__company,
+.workex__title {
+  font-size: calc(1vw + 1rem);
+  font-weight: 600;
+}
+
+.workex__number {
+  color: #8491a0;
+  font-size: calc(5vw + 5rem);
+  /* margin-top: 5%; */
+  line-height: 100%;
+}
+
+.workex__company {
+  color: #3cc74e;
+}
+
+.workex__desc {
+  padding-top: 2%;
+  font-size: calc(1.5vw + 0.5rem);
+}
+
+@media only screen and (min-width: 500px) {
+  .workex {
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+  }
+
+  .workex__header {
+    font-size: calc(1vw + 0.5rem);
+  }
+
+  .workex__header-desc {
+    font-size: calc(1.2vw + 2rem);
+  }
+
+  .workex__container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .workex__number {
+    font-size: calc(2vw + 5rem);
+  }
+
+  .workex__desc {
+    font-size: calc(1vw + 0.5rem);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .workex__header {
+    font-size: calc(1vw + 0.25rem);
+  }
+
+  .workex__header-desc {
+    max-width: 80%;
+  }
+
+  .workex__desc {
+    font-size: calc(0.8vw + 0.5rem);
+  }
+}
+
+/* work experience ends */
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  color: #fafafa;
+  background-color: #282828;
+}
+
+/* Media Queries */
+/* @media (min-width: 576px) {
+  .header__content {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__content {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__content {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__content {
+    max-width: 1160px;
+  }
+} */
