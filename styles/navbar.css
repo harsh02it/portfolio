@@ -3,32 +3,50 @@ ul {
 }
 
 a {
+  color: #fff;
   text-decoration: none;
-  color: inherit;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+a:hover {
+  text-shadow: 0 0 10px currentColor;
+}
+
+.nav__list li:nth-child(1) a:hover {
+  color: #e57373;
+}
+
+.nav__list li:nth-child(2) a:hover {
+  color: #81c784;
+}
+
+.nav__list li:nth-child(3) a:hover {
+  color: #64b5f6;
+}
+
+.nav__list li:nth-child(4) a:hover {
+  color: #ffb74d;
+}
+
+.nav__list li:nth-child(5) a:hover {
+  color: #ba68c8;
 }
 
 .header {
-  background-color: #2c4e80;
-  /* position: sticky;
+  position: absolute;
   top: 0;
-  height: 5rem;
-  border-bottom: 1px solid #1a1a1a;
-  background-color: rgba(40, 40, 40, 0.95);
-  backdrop-filter: blur(1);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3); */
-  padding: 12px 0;
-}
-
-.header__content {
+  left: 0;
+  padding: 13px 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 100;
   margin: 0 auto;
-  max-width: 90%;
+  width: 100%;
 }
 
 .header__title {
-  color: #fff;
+  color: #a8d0e6;
   font-size: calc(100% + 1.5vw);
   letter-spacing: 1.2px;
   font-weight: 500;
@@ -41,10 +59,10 @@ a {
 .nav {
   position: fixed;
   top: 63px;
-  left: 0px;
+  left: 0;
   width: 100%;
-  padding: 25px 0 25px;
-  background: rgba(255, 255, 255, 0.7);
+  padding: 25px 0;
+  background: rgba(28, 26, 26, 0.7);
   backdrop-filter: blur(10px);
   transform: translateX(-100%);
   transition: all 0.3s ease-in-out;
@@ -55,17 +73,19 @@ a {
   flex-direction: column;
   align-items: center;
   row-gap: 20px;
+  font-size: calc(100% + 0.25vw);
 }
 
 .nav__link {
-  color: rgba(255, 255, 255, 0.7);
+  color: #fff;
 }
 
 .hamburger {
   display: block;
-  width: min-content;
-  height: min-content;
   cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: relative;
 }
 
 .bar {
@@ -93,8 +113,9 @@ a {
     flex-direction: row;
     column-gap: 20px;
     justify-content: flex-end;
-    margin-right: 12%;
+    margin-right: 18%;
   }
+
   .nav__list--tablet {
     display: none;
   }
@@ -102,6 +123,6 @@ a {
 
 @media only screen and (min-width: 1024px) {
   .nav__list {
-    margin-right: 10%;
+    margin-right: 15%;
   }
 }

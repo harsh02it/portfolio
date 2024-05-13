@@ -15,35 +15,31 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/home.css" />
-    <!-- <link rel="stylesheet" href="styles/hamburger_menu.css" /> -->
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/banner-v2.css" />
     <link rel="stylesheet" href="styles/skills.css" />
-    <!-- <link rel="stylesheet" href="styles/banner.css" /> -->
   </head>
   <body>
     <!-- Navbar and logo -->
     <header class="header">
-      <div class="header__content">
-        <a class="header__title">Harshit.</a>
+      <h2 class="header__title">Harshit.</h2>
 
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Projects</a>
-            </li>
-            <li class="nav__item"><a class="nav__link" href="#">Team</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
-          </ul>
-        </nav>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Projects</a>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#">Team</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+        </ul>
+      </nav>
 
-        <div class="hamburger">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
+      <div class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
     </header>
 
@@ -51,11 +47,9 @@
     <div class="banner overlay">
       <!-- <div class="overlay"></div> -->
       <div class="banner-content container">
-        <h1 class="banner-title">
-          <span class="up">HI!</span>
-          <span class="down">I'm Harshit Savani</span>
-        </h1>
-        <p class="banner-subtitle"></p>
+        <h4 class="banner-title-up">Hi! I'm</h4>
+        <h1 class="banner-title-down">Harshit Savani</h1>
+        <p id="banner-subtitle"></p>
       </div>
     </div>
 
@@ -178,6 +172,8 @@
     <footer>
       <p class="copyright">Harshit Savani &copy;2024</p>
     </footer>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.17.0/dist/core.js"></script> -->
     <script src="script.js"></script>
+    <script src="scripts/text-scrolling.js"></script>
   </body>
 </html>
