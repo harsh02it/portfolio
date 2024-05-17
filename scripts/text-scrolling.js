@@ -1,9 +1,3 @@
-// const texts = ["React.js Developer", "Photographer", "Anime Fan"];
-
-// const textSelection = document.querySelector(".banner-subtitle");
-
-// textSelection.textContent = texts[0];
-
 document.addEventListener("DOMContentLoaded", function () {
   var phrases = [
     "React.js Developer",

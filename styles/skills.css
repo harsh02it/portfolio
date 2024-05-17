@@ -24,7 +24,7 @@
 }
 
 .skills {
-  column-gap: 100px;
+  column-gap: 8vw;
 }
 
 .skills__item {
@@ -39,15 +39,15 @@
   border-radius: 10px;
   background-origin: border-box;
   background-clip: content-box, border-box;
-  height: 170px;
-  width: 200px;
+  height: 10vw;
+  width: 13vw;
 }
 
 .skills__item img {
-  height: 100px;
+  height: 60%;
   width: auto;
 }
 
 .skills__item-name {
-  padding-top: 1rem;
+  padding-top: 0.5vw;
 }
