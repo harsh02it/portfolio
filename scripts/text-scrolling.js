@@ -6,33 +6,22 @@ document.addEventListener("DOMContentLoaded", function () {
     "Anime Fan",
   ];
   var index = 0;
-  var charIndex = 0;
-  var typingSpeed = 100; // Adjust typing speed as needed
-  var delayBeforeNextPhrase = 2000; // Adjust delay before next phrase as needed
+  var delayBeforeNextPhrase = 4000;
+  var animationDuration = 2000;
 
   var bannerSubtitle = document.getElementById("banner-subtitle");
 
-  function typePhrase() {
-    if (charIndex < phrases[index].length) {
-      bannerSubtitle.textContent += phrases[index].charAt(charIndex);
-      charIndex++;
-      setTimeout(typePhrase, typingSpeed);
-    } else {
-      setTimeout(erasePhrase, delayBeforeNextPhrase);
-    }
+  function showNextPhrase() {
+    bannerSubtitle.style.animation = "none";
+    void bannerSubtitle.offsetWidth;
+    bannerSubtitle.style.animation = `rollUp ${
+      animationDuration / 1000
+    }s ease-in-out forwards`;
+    bannerSubtitle.textContent = phrases[index];
+
+    index = (index + 1) % phrases.length;
+    setTimeout(showNextPhrase, delayBeforeNextPhrase);
   }
 
-  function erasePhrase() {
-    if (bannerSubtitle.textContent.length > 0) {
-      bannerSubtitle.textContent = bannerSubtitle.textContent.slice(0, -1);
-      setTimeout(erasePhrase, typingSpeed / 2);
-    } else {
-      index = (index + 1) % phrases.length;
-      charIndex = 0;
-      setTimeout(typePhrase, typingSpeed);
-    }
-  }
-
-  // Start typing the first phrase
-  typePhrase();
+  showNextPhrase();
 });
